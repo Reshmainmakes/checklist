@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+<meta charset="UTF-8">
+
+<title>Nips Juice</title>
+    <link rel="icon" href="img.png">
+
+</head>
+
+<body  >
+
+<style>
+    button {
+   padding: 15px 40px;
+}
+body{
+
+  background-color:white;
+}
+button
+{
+color:#85144B;
+}
+
+
+.container {
+  position: relative;
+  max-width:100%;
+  margin: auto;
+}
+
+.example-image {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading {
+  color: purple;
+  font-size: 96px;
+  text-shadow: 0 0 2px black;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.sub-heading {
+  color: white;
+  font-size: 40px;
+  text-shadow: 0 0 2px black;
+}
+
+
+  .button-container form {
+  display: inline-block;
+  margin-right: 10px; /* Adjust as needed for spacing between buttons */
+  align-items: center;
+}
+
+
+.button {
+  background: #1EC6B5;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  font-size: 24px;
+  border-radius: 2px;
+}
+</style>
+
+
+
+
+
+
+				<div class="container">
+
+  <img src="nips1.jpeg" alt="" class="example-image"  ></img>
+  <div class="content">
+    <div class="heading">
+        <center>
+     Nips Juice House
+     </center>
+    </div>
+
+      <br>
+      <br>
+      <br>
+    <div class="button-container">
+        <center>
+        <form action="{% url 'opening' %}">
+
+
+        <button type="submit"> Opening Checklist </button>
+
+
+    </form>
+
+
+        <form action="{% url 'restroomcleaning' %}">
+
+
+        <button type="submit" >Restroom Cleaning Checklist </button>
+
+    </form>
+
+    <form action="{% url 'transition' %}">
+
+
+        <button type="submit"> Trasition Checklist </button>
+
+    </form>
+
+    <form action="{% url 'closing' %}">
+
+       <button type="submit"> Closing Checklist </button>
+
+    </form>
+            </center>
+    </div>
+  </div>
+
+
+</body>
+</html>
